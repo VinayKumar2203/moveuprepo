@@ -11,11 +11,11 @@ const Navbar = () => {
   return (
     <div>
       <div className="linkNavbar">
-      <Link to='/'>Home</Link>
-      <Link to='/about'>About</Link>
-      <Link to='/contact'>Contact</Link>
-      <Link to='/service'>Service</Link>
-      <Link to='/login'>Login</Link>
+        <Link to='/'>Home</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/contact'>Contact</Link>
+        <Link to='/service'>Service</Link>
+        <Link to='/login'>Login</Link>
       </div>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,8 +23,8 @@ const Navbar = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/service" element={<Service />} />
-        <Route path="*" element={<PageNotFound/>} />
-        <Route path="/service/:user_ID" element={<SingleUser/>} />
+        <Route path="*" element={<PageNotFound />} />
+        <Route path="/service/:user_ID" element={<SingleUser />} />
       </Routes>
     </div>
   )
